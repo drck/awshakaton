@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://demos.creative-tim.com/vuetify-material-dashboard/#/user-profile -->
+<html lang="en" openrequests="0"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="./resources/css" rel="stylesheet" type="text/css"><link rel="icon" href="https://demos.creative-tim.com/vuetify-material-dashboard/favicon.png"><title>Vuetify Material Dashboard by CreativeTim</title><link rel="canonical" href="https://www.creative-tim.com/product/vuetify-material-dashboard"><meta name="keywords" content="vuetify material dashboard, material vuetify admin, material vuetify dashboard, material design admin, material design, creative tim, vue dashboard, vue css dashboard, web dashboard, freebie, vuejs, vuetify,  free dashboard, css3 dashboard, vue admin, vue dashboard, frontend, responsive vue dashboard"><meta name="description" content="Vuetify Material Dashboard is a beautiful resource built over Vuetify, Vuex and Vuejs. It will help you get started developing dashboards in no time."><meta itemprop="name" content="Vuetify Material Dashboard by Creative Tim"><meta itemprop="description" content="Vuetify Material Dashboard is a beautiful resource built over Vuetify, Vuex and Vuejs. It will help you get started developing dashboards in no time."><meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/100/original/opt_md_vuetify_thumbnail.jpg"><meta name="twitter:card" content="product"><meta name="twitter:site" content="@creativetim"><meta name="twitter:title" content="Vuetify Material Dashboard by Creative Tim"><meta name="twitter:description" content="Vuetify Material Dashboard is a beautiful resource built over Vuetify, Vuex and Vuejs. It will help you get started developing dashboards in no time."><meta name="twitter:creator" content="@creativetim"><meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/100/original/opt_md_vuetify_thumbnail.jpg"><meta name="twitter:data1" content="Vuetify Material Dashboard by Creative Tim"><meta name="twitter:label1" content="Product Type"><meta name="twitter:data2" content="Free"><meta name="twitter:label2" content="Price"><meta property="fb:app_id" content="655968634437471"><meta property="og:title" content="Vuetify Material Dashboard by Creative Tim"><meta property="og:type" content="article"><meta property="og:url" content="https://demos.creative-tim.com/vue-material-dashboard"><meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/100/original/opt_md_vuetify_thumbnail.jpg"><meta property="og:description" content="Vuetify Material Dashboard is a beautiful resource built over Vuetify, Vuex and Vuejs. It will help you get started developing dashboards in no time."><meta property="og:site_name" content="Creative Tim"><link rel="stylesheet" href="./resources/css"><link rel="stylesheet" href="./resources/icon"><link href="./resources/all.css" rel="stylesheet"><script type="text/javascript" async="" src="./resources/analytics.js"></script><script async="" src="./resources/fbevents.js"></script><script async="" src="./resources/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NKDMSK6');</script><link href="https://demos.creative-tim.com/vuetify-material-dashboard/css/chunk-56379d59.5c5a738e.css" rel="prefetch"><link href="./resources/chunk-7fdb4775.aec4565d.css" rel="prefetch"><link href="./resources/chunk-2d0cb6c9.b1a92cd8.js" rel="prefetch"><link href="./resources/chunk-2d0d63f1.44b2759c.js" rel="prefetch"><link href="./resources/chunk-2d0daa98.45f932ef.js" rel="prefetch"><link href="https://demos.creative-tim.com/vuetify-material-dashboard/js/chunk-2d0e492d.41175fa0.js" rel="prefetch"><link href="https://demos.creative-tim.com/vuetify-material-dashboard/js/chunk-2d0f09f3.bf85afb5.js" rel="prefetch"><link href="https://demos.creative-tim.com/vuetify-material-dashboard/js/chunk-2d23822a.3ea04f78.js" rel="prefetch"><link href="https://demos.creative-tim.com/vuetify-material-dashboard/js/chunk-56379d59.1e34fe33.js" rel="prefetch"><link href="./resources/chunk-7fdb4775.b9127521.js" rel="prefetch"><link href="./resources/app.bf0314ab.css" rel="preload" as="style"><link href="./resources/chunk-vendors.3b91865d.css" rel="preload" as="style"><link href="./resources/app.396d81fc.js" rel="preload" as="script"><link href="./resources/chunk-vendors.070a5069.js" rel="preload" as="script"><link href="./resources/chunk-vendors.3b91865d.css" rel="stylesheet"><link href="./resources/app.bf0314ab.css" rel="stylesheet"><script charset="utf-8" src="./resources/chunk-2d0d63f1.44b2759c.js"></script><style id="vuetify-theme-stylesheet" type="text/css" data-vue-meta="true">a { color: #4caf50; }
+.primary {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.primary--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.primary.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.primary--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.primary.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.primary--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.primary.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.primary--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.primary.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.primary--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.primary.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.primary--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.primary.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.primary--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.primary.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.primary--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.primary.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.primary--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.primary.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.primary--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.secondary {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.secondary--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.secondary.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.secondary--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.secondary.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.secondary--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.secondary.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.secondary--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.secondary.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.secondary--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.secondary.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.secondary--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.secondary.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.secondary--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.secondary.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.secondary--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.secondary.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.secondary--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.secondary.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.secondary--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.error {
+  background-color: #f55a4e !important;
+  border-color: #f55a4e !important;
+}
+.error--text {
+  color: #f55a4e !important;
+  caret-color: #f55a4e !important;
+}
+.error.lighten-5 {
+  background-color: #ffe9d0 !important;
+  border-color: #ffe9d0 !important;
+}
+.error--text.text--lighten-5 {
+  color: #ffe9d0 !important;
+  caret-color: #ffe9d0 !important;
+}
+.error.lighten-4 {
+  background-color: #ffcbb5 !important;
+  border-color: #ffcbb5 !important;
+}
+.error--text.text--lighten-4 {
+  color: #ffcbb5 !important;
+  caret-color: #ffcbb5 !important;
+}
+.error.lighten-3 {
+  background-color: #ffaf9a !important;
+  border-color: #ffaf9a !important;
+}
+.error--text.text--lighten-3 {
+  color: #ffaf9a !important;
+  caret-color: #ffaf9a !important;
+}
+.error.lighten-2 {
+  background-color: #ff9280 !important;
+  border-color: #ff9280 !important;
+}
+.error--text.text--lighten-2 {
+  color: #ff9280 !important;
+  caret-color: #ff9280 !important;
+}
+.error.lighten-1 {
+  background-color: #ff7666 !important;
+  border-color: #ff7666 !important;
+}
+.error--text.text--lighten-1 {
+  color: #ff7666 !important;
+  caret-color: #ff7666 !important;
+}
+.error.darken-1 {
+  background-color: #d53d37 !important;
+  border-color: #d53d37 !important;
+}
+.error--text.text--darken-1 {
+  color: #d53d37 !important;
+  caret-color: #d53d37 !important;
+}
+.error.darken-2 {
+  background-color: #b61b21 !important;
+  border-color: #b61b21 !important;
+}
+.error--text.text--darken-2 {
+  color: #b61b21 !important;
+  caret-color: #b61b21 !important;
+}
+.error.darken-3 {
+  background-color: #96000b !important;
+  border-color: #96000b !important;
+}
+.error--text.text--darken-3 {
+  color: #96000b !important;
+  caret-color: #96000b !important;
+}
+.error.darken-4 {
+  background-color: #780000 !important;
+  border-color: #780000 !important;
+}
+.error--text.text--darken-4 {
+  color: #780000 !important;
+  caret-color: #780000 !important;
+}
+.info {
+  background-color: #00d3ee !important;
+  border-color: #00d3ee !important;
+}
+.info--text {
+  color: #00d3ee !important;
+  caret-color: #00d3ee !important;
+}
+.info.lighten-5 {
+  background-color: #d3ffff !important;
+  border-color: #d3ffff !important;
+}
+.info--text.text--lighten-5 {
+  color: #d3ffff !important;
+  caret-color: #d3ffff !important;
+}
+.info.lighten-4 {
+  background-color: #b3ffff !important;
+  border-color: #b3ffff !important;
+}
+.info--text.text--lighten-4 {
+  color: #b3ffff !important;
+  caret-color: #b3ffff !important;
+}
+.info.lighten-3 {
+  background-color: #93ffff !important;
+  border-color: #93ffff !important;
+}
+.info--text.text--lighten-3 {
+  color: #93ffff !important;
+  caret-color: #93ffff !important;
+}
+.info.lighten-2 {
+  background-color: #71ffff !important;
+  border-color: #71ffff !important;
+}
+.info--text.text--lighten-2 {
+  color: #71ffff !important;
+  caret-color: #71ffff !important;
+}
+.info.lighten-1 {
+  background-color: #4af0ff !important;
+  border-color: #4af0ff !important;
+}
+.info--text.text--lighten-1 {
+  color: #4af0ff !important;
+  caret-color: #4af0ff !important;
+}
+.info.darken-1 {
+  background-color: #00b7d2 !important;
+  border-color: #00b7d2 !important;
+}
+.info--text.text--darken-1 {
+  color: #00b7d2 !important;
+  caret-color: #00b7d2 !important;
+}
+.info.darken-2 {
+  background-color: #009cb6 !important;
+  border-color: #009cb6 !important;
+}
+.info--text.text--darken-2 {
+  color: #009cb6 !important;
+  caret-color: #009cb6 !important;
+}
+.info.darken-3 {
+  background-color: #00829b !important;
+  border-color: #00829b !important;
+}
+.info--text.text--darken-3 {
+  color: #00829b !important;
+  caret-color: #00829b !important;
+}
+.info.darken-4 {
+  background-color: #006881 !important;
+  border-color: #006881 !important;
+}
+.info--text.text--darken-4 {
+  color: #006881 !important;
+  caret-color: #006881 !important;
+}
+.success {
+  background-color: #5cb860 !important;
+  border-color: #5cb860 !important;
+}
+.success--text {
+  color: #5cb860 !important;
+  caret-color: #5cb860 !important;
+}
+.success.lighten-5 {
+  background-color: #ebffe7 !important;
+  border-color: #ebffe7 !important;
+}
+.success--text.text--lighten-5 {
+  color: #ebffe7 !important;
+  caret-color: #ebffe7 !important;
+}
+.success.lighten-4 {
+  background-color: #cdffcb !important;
+  border-color: #cdffcb !important;
+}
+.success--text.text--lighten-4 {
+  color: #cdffcb !important;
+  caret-color: #cdffcb !important;
+}
+.success.lighten-3 {
+  background-color: #b0ffaf !important;
+  border-color: #b0ffaf !important;
+}
+.success--text.text--lighten-3 {
+  color: #b0ffaf !important;
+  caret-color: #b0ffaf !important;
+}
+.success.lighten-2 {
+  background-color: #94f194 !important;
+  border-color: #94f194 !important;
+}
+.success--text.text--lighten-2 {
+  color: #94f194 !important;
+  caret-color: #94f194 !important;
+}
+.success.lighten-1 {
+  background-color: #78d47a !important;
+  border-color: #78d47a !important;
+}
+.success--text.text--lighten-1 {
+  color: #78d47a !important;
+  caret-color: #78d47a !important;
+}
+.success.darken-1 {
+  background-color: #3f9d47 !important;
+  border-color: #3f9d47 !important;
+}
+.success--text.text--darken-1 {
+  color: #3f9d47 !important;
+  caret-color: #3f9d47 !important;
+}
+.success.darken-2 {
+  background-color: #1f822f !important;
+  border-color: #1f822f !important;
+}
+.success--text.text--darken-2 {
+  color: #1f822f !important;
+  caret-color: #1f822f !important;
+}
+.success.darken-3 {
+  background-color: #006816 !important;
+  border-color: #006816 !important;
+}
+.success--text.text--darken-3 {
+  color: #006816 !important;
+  caret-color: #006816 !important;
+}
+.success.darken-4 {
+  background-color: #004f00 !important;
+  border-color: #004f00 !important;
+}
+.success--text.text--darken-4 {
+  color: #004f00 !important;
+  caret-color: #004f00 !important;
+}
+.warning {
+  background-color: #ffa21a !important;
+  border-color: #ffa21a !important;
+}
+.warning--text {
+  color: #ffa21a !important;
+  caret-color: #ffa21a !important;
+}
+.warning.lighten-5 {
+  background-color: #ffffad !important;
+  border-color: #ffffad !important;
+}
+.warning--text.text--lighten-5 {
+  color: #ffffad !important;
+  caret-color: #ffffad !important;
+}
+.warning.lighten-4 {
+  background-color: #ffff91 !important;
+  border-color: #ffff91 !important;
+}
+.warning--text.text--lighten-4 {
+  color: #ffff91 !important;
+  caret-color: #ffff91 !important;
+}
+.warning.lighten-3 {
+  background-color: #fff675 !important;
+  border-color: #fff675 !important;
+}
+.warning--text.text--lighten-3 {
+  color: #fff675 !important;
+  caret-color: #fff675 !important;
+}
+.warning.lighten-2 {
+  background-color: #ffd959 !important;
+  border-color: #ffd959 !important;
+}
+.warning--text.text--lighten-2 {
+  color: #ffd959 !important;
+  caret-color: #ffd959 !important;
+}
+.warning.lighten-1 {
+  background-color: #ffbd3c !important;
+  border-color: #ffbd3c !important;
+}
+.warning--text.text--lighten-1 {
+  color: #ffbd3c !important;
+  caret-color: #ffbd3c !important;
+}
+.warning.darken-1 {
+  background-color: #df8800 !important;
+  border-color: #df8800 !important;
+}
+.warning--text.text--darken-1 {
+  color: #df8800 !important;
+  caret-color: #df8800 !important;
+}
+.warning.darken-2 {
+  background-color: #c06e00 !important;
+  border-color: #c06e00 !important;
+}
+.warning--text.text--darken-2 {
+  color: #c06e00 !important;
+  caret-color: #c06e00 !important;
+}
+.warning.darken-3 {
+  background-color: #a15500 !important;
+  border-color: #a15500 !important;
+}
+.warning--text.text--darken-3 {
+  color: #a15500 !important;
+  caret-color: #a15500 !important;
+}
+.warning.darken-4 {
+  background-color: #843d00 !important;
+  border-color: #843d00 !important;
+}
+.warning--text.text--darken-4 {
+  color: #843d00 !important;
+  caret-color: #843d00 !important;
+}
+.tertiary {
+  background-color: #495057 !important;
+  border-color: #495057 !important;
+}
+.tertiary--text {
+  color: #495057 !important;
+  caret-color: #495057 !important;
+}
+.tertiary.lighten-5 {
+  background-color: #cad2da !important;
+  border-color: #cad2da !important;
+}
+.tertiary--text.text--lighten-5 {
+  color: #cad2da !important;
+  caret-color: #cad2da !important;
+}
+.tertiary.lighten-4 {
+  background-color: #aeb6be !important;
+  border-color: #aeb6be !important;
+}
+.tertiary--text.text--lighten-4 {
+  color: #aeb6be !important;
+  caret-color: #aeb6be !important;
+}
+.tertiary.lighten-3 {
+  background-color: #939ba3 !important;
+  border-color: #939ba3 !important;
+}
+.tertiary--text.text--lighten-3 {
+  color: #939ba3 !important;
+  caret-color: #939ba3 !important;
+}
+.tertiary.lighten-2 {
+  background-color: #7a8189 !important;
+  border-color: #7a8189 !important;
+}
+.tertiary--text.text--lighten-2 {
+  color: #7a8189 !important;
+  caret-color: #7a8189 !important;
+}
+.tertiary.lighten-1 {
+  background-color: #61686f !important;
+  border-color: #61686f !important;
+}
+.tertiary--text.text--lighten-1 {
+  color: #61686f !important;
+  caret-color: #61686f !important;
+}
+.tertiary.darken-1 {
+  background-color: #323940 !important;
+  border-color: #323940 !important;
+}
+.tertiary--text.text--darken-1 {
+  color: #323940 !important;
+  caret-color: #323940 !important;
+}
+.tertiary.darken-2 {
+  background-color: #1d242a !important;
+  border-color: #1d242a !important;
+}
+.tertiary--text.text--darken-2 {
+  color: #1d242a !important;
+  caret-color: #1d242a !important;
+}
+.tertiary.darken-3 {
+  background-color: #050e16 !important;
+  border-color: #050e16 !important;
+}
+.tertiary--text.text--darken-3 {
+  color: #050e16 !important;
+  caret-color: #050e16 !important;
+}
+.tertiary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.tertiary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}</style><script src="chrome-extension://addlcedbjhnaadhddfidldambcbooghm/Resources/ajaxTracer.js"></script><script>var tracer = new AjaxTracer(window, false);tracer.startTracing();</script><script charset="utf-8" src="./resources/chunk-2d0cb6c9.b1a92cd8.js"></script><script charset="utf-8" src="./resources/chunk-2d0daa98.45f932ef.js"></script><link rel="stylesheet" type="text/css" href="./resources/chunk-7fdb4775.aec4565d.css"><script charset="utf-8" src="./resources/chunk-7fdb4775.b9127521.js"></script></head><body><noscript><strong>We're sorry but material-free doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div data-app="true" class="application theme--light" id="app"><div class="v-menu__content theme--light dropdown-menu" style="min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"><div class="v-card theme--light"><div class="v-list v-list--dense theme--light"><div><a class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">Mike, John responded to your email</div></a></div><div><a class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">You have 5 new tasks</div></a></div><div><a class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">You're now a friend with Andrew</div></a></div><div><a class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">Another Notification</div></a></div><div><a class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">Another One</div></a></div></div></div></div><div data-v-5d92c2be="" class="v-menu__content theme--light " style="min-width: 300px; max-width: 300px; top: 12px; left: 12px; transform-origin: left top; z-index: 0; display: none;"><div data-v-5d92c2be="" class="v-card theme--light"><div data-v-5d92c2be="" class="container grid-list-xl"><div data-v-5d92c2be="" class="layout wrap"><div data-v-5d92c2be="" class="flex xs12"><div data-v-5d92c2be="" class="text-xs-center body-2 text-uppercase sidebar-filter">Sidebar Filters</div><div data-v-5d92c2be="" class="layout justify-center"><div data-v-5d92c2be="" class="v-avatar color-primary" style="height: 23px; width: 23px;"></div><div data-v-5d92c2be="" class="v-avatar color-info" style="height: 23px; width: 23px;"></div><div data-v-5d92c2be="" class="v-avatar color-active color-success" style="height: 23px; width: 23px;"></div><div data-v-5d92c2be="" class="v-avatar color-warning" style="height: 23px; width: 23px;"></div><div data-v-5d92c2be="" class="v-avatar color-danger" style="height: 23px; width: 23px;"></div></div><hr data-v-5d92c2be="" class="mt-3 v-divider theme--light"></div><div data-v-5d92c2be="" class="flex xs12"><div data-v-5d92c2be="" class="text-xs-center body-2 text-uppercase sidebar-filter">Images</div></div><div data-v-5d92c2be="" class="flex xs3"><div data-v-5d92c2be="" class="v-responsive v-image" style="height: 120px;"><div class="v-responsive__sizer" style="padding-bottom: 150.502%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-1.23832d31.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-5d92c2be="" class="flex xs3"><div data-v-5d92c2be="" class="v-responsive v-image image-active" style="height: 120px;"><div class="v-responsive__sizer" style="padding-bottom: 150%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-2.32103624.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-5d92c2be="" class="flex xs3"><div data-v-5d92c2be="" class="v-responsive v-image" style="height: 120px;"><div class="v-responsive__sizer" style="padding-bottom: 150%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-3.3a54f533.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-5d92c2be="" class="flex xs3"><div data-v-5d92c2be="" class="v-responsive v-image" style="height: 120px;"><div class="v-responsive__sizer" style="padding-bottom: 125%;"></div><div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-4.3b7e38ed.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div><div data-v-5d92c2be="" class="flex xs12"><a data-v-5d92c2be="" href="https://www.creative-tim.com/product/vuetify-material-dashboard" target="_blank" class="v-btn v-btn--block theme--light success"><div class="v-btn__content">
+            Free Download
+          </div></a></div><div data-v-5d92c2be="" class="flex xs12"><a data-v-5d92c2be="" href="https://demos.creative-tim.com/vuetify-material-dashboard/documentation" target="_blank" class="white--text v-btn v-btn--block theme--light primary"><div class="v-btn__content">
+            Documentation
+          </div></a></div><div data-v-5d92c2be="" class="flex xs12"><div data-v-5d92c2be="" class="text-xs-center body-2 text-uppercase"><div data-v-5d92c2be="" class=" sidebar-filter">
+              Thank You for Sharing!
+            </div><div data-v-5d92c2be="" class="centered-buttons"><span data-link="#share-facebook" class="mr-2 v-btn-facebook v-btn v-btn--floating v-btn--icon v-btn--small theme--dark indigo v-btn--round"><i class="v-icon mdi mdi-facebook theme--dark"></i></span><span data-link="#share-twitter" class="v-btn-twitter v-btn v-btn--floating v-btn--icon v-btn--small theme--dark cyan v-btn--round"><i class="v-icon mdi mdi-twitter theme--dark"></i></span></div></div></div><div data-v-5d92c2be="" class="flex xs12"><div data-v-5d92c2be="" class="text-center"><div data-v-5d92c2be="" class="gh-button-container"><a class="gh-button with-count" href="https://github.com/creativetimofficial/vuetify-material-dashboard" target="_blank"><svg version="1.1" width="14" height="16" viewBox="0 0 14 16" aria-hidden="true" class="octicon octicon-star"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> 
+	Star
+</a> <a href="https://github.com/creativetimofficial/vuetify-material-dashboard/stargazers" target="_blank" class="social-count">
+			405
+		</a></div></div></div></div></div></div></div><div class="application--wrap"><div data-v-5d92c2be="" class="v-menu v-menu--inline"><div class="v-menu__activator"><button data-v-5d92c2be="" type="button" class="elevation-0 v-btn v-btn--floating v-btn--fixed v-btn--top theme--dark grey" style="top: 96px;"><div class="v-btn__content"><i data-v-5d92c2be="" aria-hidden="true" class="v-icon mdi mdi-settings theme--dark"></i></div></button></div></div><nav class="v-toolbar elevation-0 v-toolbar--prominent theme--light" id="core-toolbar" data-booted="true" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px); background: rgb(238, 238, 238);"><div class="v-toolbar__content" style="height: 64px;"><div class="v-toolbar-title"><div class="v-toolbar__title tertiary--text font-weight-light"><!---->
+      User Profile
+    </div></div><div class="spacer"></div><div class="v-toolbar__items"><div class="flex align-center layout py-2"><div class="v-input mr-4 mt-2 purple-input v-text-field v-input--hide-details theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Search...</label><input aria-label="Search..." type="text"></div></div></div></div><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/" class="toolbar-items router-link-active"><i aria-hidden="true" class="v-icon mdi mdi-view-dashboard theme--light tertiary--text"></i></a><div class="v-menu v-menu--inline"><div class="v-menu__activator"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/notifications" class="toolbar-items"><span class="v-badge v-badge--overlap"><i aria-hidden="true" class="v-icon mdi mdi-bell theme--light tertiary--text"></i><span class="v-badge__badge error">
+              5
+            </span></span></a></div></div><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/user-profile" class="toolbar-items router-link-exact-active router-link-active"><i aria-hidden="true" class="v-icon mdi mdi-account theme--light tertiary--text"></i></a></div></div></div></nav><aside class="v-navigation-drawer v-navigation-drawer--fixed v-navigation-drawer--floating v-navigation-drawer--open theme--dark" id="app-drawer" persistent="" data-booted="true" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(0px); width: 260px;"><div class="v-responsive v-image" style="height: 100%;"><div class="v-responsive__sizer" style="padding-bottom: 150%;"></div><div class="v-image__image v-image__image--cover" style="background-image: linear-gradient(rgba(27, 27, 27, 0.74), rgba(27, 27, 27, 0.74)), url(&quot;https://demos.creative-tim.com/vue-material-dashboard/img/sidebar-2.32103624.jpg&quot;); background-position: center center;"></div><div class="v-responsive__content"><div class="v-list layout fill-height column theme--dark"><div><div class="v-list__tile v-list__tile--avatar theme--dark"><div class="v-list__tile__avatar"><div class="v-avatar white" style="height: 40px; width: 40px;"><div class="v-responsive v-image" style="height: 34px;"><div class="v-responsive__sizer" style="padding-bottom: 100%;"></div><div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://demos.creative-tim.com/vuetify-material-dashboard/img/vuetifylogo.png&quot;); background-position: center center;"></div><div class="v-responsive__content"></div></div></div></div><div class="v-list__tile__title title">
+          Vuetify MD
+        </div></div></div><hr class="v-divider theme--dark"><!----><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/dashboard" class="v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-view-dashboard theme--dark"></i></div><div class="v-list__tile__title">Dashboard</div></a></div><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/user-profile" class="success v-list__tile--active v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-account theme--dark"></i></div><div class="v-list__tile__title">User Profile</div></a></div><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/table-list" class="v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-clipboard-outline theme--dark"></i></div><div class="v-list__tile__title">Table List</div></a></div><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/typography" class="v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-format-font theme--dark"></i></div><div class="v-list__tile__title">Typography</div></a></div><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/icons" class="v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-chart-bubble theme--dark"></i></div><div class="v-list__tile__title">Icons</div></a></div><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/maps" class="v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-map-marker theme--dark"></i></div><div class="v-list__tile__title">Maps</div></a></div><div class="v-list-item"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/notifications" class="v-list__tile v-list__tile--link v-list__tile--avatar theme--dark"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-bell theme--dark"></i></div><div class="v-list__tile__title">Notifications</div></a></div><div disabled="disabled" class="v-list-item v-list__tile--buy v-list--disabled"><a href="https://demos.creative-tim.com/vuetify-material-dashboard/#/upgrade" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--dark" disabled="disabled"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-package-up theme--dark"></i></div><div class="v-list__tile__title font-weight-light">
+          Upgrade To PRO
+        </div></a></div></div></div></div><div class="v-navigation-drawer__border"></div></aside><main class="v-content" data-booted="true" style="padding: 0px 0px 0px 260px;"><div class="v-content__wrap"><div id="core-view"><div class="container fill-height fluid grid-list-xl"><div class="layout justify-center wrap"><div class="flex xs12 md8"><div class="v-card theme--light" style="margin-bottom: 24px; margin-top: 48px;"><div class="v-offset" style="top: -24px; margin-bottom: -24px;"><div class="v-card--material__header v-card theme--dark green elevation-10"><span><h4 class="title font-weight-light mb-2">Edit Profile</h4><p class="category font-weight-thin">Complete your profile</p></span></div></div><div class="v-card__text"><form novalidate="novalidate" class="v-form"><div class="container py-0"><div class="layout wrap"><div class="flex xs12 md4"><div class="v-input v-text-field v-input--is-disabled theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label v-label--is-disabled theme--light" style="left: 0px; right: auto; position: absolute;">Company (disabled)</label><input aria-label="Company (disabled)" disabled="disabled" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md4"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">User Name</label><input aria-label="User Name" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md4"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Email Address</label><input aria-label="Email Address" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md6"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">First Name</label><input aria-label="First Name" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md6"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Last Name</label><input aria-label="Last Name" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md12"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Adress</label><input aria-label="Adress" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md4"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">City</label><input aria-label="City" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md4"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Country</label><input aria-label="Country" type="text"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 md4"><div class="v-input purple-input v-text-field theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Postal Code</label><input aria-label="Postal Code" type="number"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12"><div class="v-input purple-input v-textarea v-text-field v-input--is-label-active v-input--is-dirty theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">About Me</label><textarea aria-label="About Me" rows="5"></textarea></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="flex xs12 text-xs-right"><button type="button" class="mx-0 font-weight-light v-btn theme--light success"><div class="v-btn__content">
+                  Update Profile
+                </div></button></div></div></div></form></div><!----><!----></div></div><div class="flex xs12 md4"><div class="v-card-profile v-card theme--light" style="margin-bottom: 24px; margin-top: 48px;"><div class="v-offset" style="top: -24px; margin-bottom: -24px;"><div class="v-avatar mx-auto d-block" style="height: 130px; width: 130px;"><img src="./resources/marc.aba54d65.jpg"></div></div><div class="v-card__text"><div class="v-card__text text-xs-center"><h6 class="category text-gray font-weight-thin mb-3">CEO / CO-FOUNDER</h6><h4 class="card-title font-weight-light">Alec Thompson</h4><p class="card-description font-weight-light">Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...</p><button type="button" class="font-weight-light v-btn v-btn--round theme--light success"><div class="v-btn__content">Follow</div></button></div></div><!----><!----></div></div></div></div></div><footer class="v-footer v-footer--absolute theme--light" id="core-footer" style="height: 82px;"><div class="footer-items"><span><a href="https://demos.creative-tim.com/dashboard" class="tertiary--text footer-links">Home</a></span><span><a href="https://www.creative-tim.com/" class="tertiary--text footer-links">Creative Tim</a></span><span><a href="https://creative-tim.com/presentation" class="tertiary--text footer-links">About Us</a></span><span><a href="https://blog.creative-tim.com/" class="tertiary--text footer-links">Blog</a></span></div><div class="spacer"></div><span class="font-weight-light copyright">
+    ©
+    2019
+    <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a>, made with
+    <i aria-hidden="true" class="v-icon mdi mdi-heart theme--light tertiary--text" style="font-size: 17px;"></i>
+    for a better web
+  </span></footer></div></main></div></div><script>// Facebook Pixel Code Don't Delete
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+      try{
+        fbq('init', '111649226022273');
+        fbq('track', "PageView");
+
+      }catch(err) {
+        console.log('Facebook Track Error:', err);
+      }</script><noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1"></noscript><script src="./resources/chunk-vendors.070a5069.js"></script><script src="./resources/app.396d81fc.js"></script></body></html>
