@@ -1,0 +1,15 @@
+
+.simple-user .profile-photo{
+    width: 84px;
+    height: 84px;
+}
+.simple-user .card-icon{
+    padding: 2px !important;
+}
+.simple-user .balance small{
+    font-size: x-small;
+    margin-left: 4px;
+}
+.btn-invitar{
+    width: 150px;
+}

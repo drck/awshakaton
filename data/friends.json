@@ -1,0 +1,20 @@
+/*
+"username": "Toño",
+"username": "Octavio",
+"username": "Dorian",
+"username": "David",
+"username": "Juan de Dios",
+*/
+{
+  "friends": [
+    {
+      "name": "Toño",
+      "profilePhoto": "/assets/img/faces/tono.jpg",
+      "balance": 500,
+      "lastTransaction": {
+        "amount": 500,
+        "date": "2018-07-12"
+      }
+    }
+  ]
+}
