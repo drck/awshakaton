@@ -644,6 +644,20 @@
             });
         });
     });
+
+    function SendInvite(){
+        alert("Invitacion Enviada");
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function() {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                var response = xmlhttp.responseText; //if you need to do something with the returned value
+            }
+        }
+
+        xmlhttp.open("GET","http://hackathon.us-e2.cloudhub.io/hackathon-dmn/v1/sms-message",true);
+        xmlhttp.send();
+    }
+
 </script>
 </body>
 
